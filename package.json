@@ -1,0 +1,46 @@
+{
+  "name": "bitmark-sdk-js",
+  "version": "2.0.7",
+  "description": "Bitmark SDK JS",
+  "main": "index.js",
+  "directories": {
+    "sample": "sample",
+    "test": "test",
+    "sdk": "sdk"
+  },
+  "scripts": {
+    "test": "_mocha \"./test/**/**.test.js\"",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test",
+    "coveralls": "npm run coverage && ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitmark-inc/bitmark-sdk-js"
+  },
+  "keywords": [
+    "bitmark",
+    "lib"
+  ],
+  "author": "Bitmark Inc <support@bitmark.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitmark-inc/bitmark-sdk-js/issues"
+  },
+  "homepage": "https://github.com/bitmark-inc/bitmark-sdk-js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bn.js": "^4.11.8",
+    "bs58": "^4.0.1",
+    "js-sha3": "^0.8.0",
+    "lodash": "^4.17.13",
+    "qs": "^6.6.0",
+    "tweetnacl-nodewrap": "^0.1.10",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.4",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  }
+}
